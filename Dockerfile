@@ -1,10 +1,10 @@
 ARG  FROM_IMAGE
 FROM ${FROM_IMAGE}
 
-ENV ODOO_ENTERPRISE={{ ENTERPRISE }}
+ENV ODOO_ENTERPRISE=no
 
 ## NOTE: later *modules* override their previous namesake
-{{ DOCKERCOPIES }}
+
 
 ## Adapt from here...
 

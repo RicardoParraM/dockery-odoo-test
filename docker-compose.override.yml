@@ -6,7 +6,8 @@ x-odoo:
   &add-additional-volumes
   volumes:
   # Put additional volumes here
-  {{ VOLUMES }}
+  # Dummy mount not to break this yaml template...
+  - .gitignore:/.gitignore:ro
 
 services:
   odoo:
